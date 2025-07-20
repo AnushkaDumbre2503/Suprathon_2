@@ -1,17 +1,27 @@
 Flask==3.0.3
 Flask-SQLAlchemy==3.1.1
+Flask-Migrate==4.0.7
+
 pydub==0.25.1
 opencv-python==4.10.0.84
+
 transformers==4.44.2
 torch==2.5.1
 numpy==1.26.4
+
 soundfile==0.12.1
-Flask-Migrate==4.0.7
 reportlab==4.2.0
 ffmpeg-python==0.2.0
-mediapipe==0.10.14
+
+# Use mediapipe version compatible with Python 3.10
+mediapipe==0.10.9
+
 noisereduce==3.0.0
 librosa==0.10.2
 scipy==1.13.1
+
+# Whisper for transcription
 openai-whisper==20231117
-gunicorn
+
+# Production server
+gunicorn==21.2.0
